@@ -1,0 +1,97 @@
+//  Imports
+//  ───────────────────────────────────
+
+@import 'colors.less';
+@import 'sizes.less';
+
+
+//  Main Styles
+//  ───────────────────────────────────
+
+:root {
+  font-size: 14px;
+}
+
+body, html {
+  background-color: @oc-gray-0;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: @height-header auto @height-footer;
+  grid-template-columns: auto @width-sidebar;
+  grid-gap: @spacing-gaps;
+  margin: auto;
+  min-height: 100vh;
+  width: @width-container;
+  background-color: @oc-white;
+
+  .header {
+    display: grid;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: @padding-wrapper;
+  }
+
+  .main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: @padding-wrapper;
+  }
+
+  .sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: @padding-wrapper;
+  }
+
+  .footer {
+    display: grid;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: @padding-wrapper;
+  }
+}
+
+
+//  Media Queries
+//  ───────────────────────────────────
+
+@media screen and (max-width: 984px) {
+
+  body, html {
+    margin: 0 @padding-wrapper;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  .main {
+    grid-column-start: 1 !important;
+    grid-column-end: 3 !important;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+}
