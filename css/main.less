@@ -1,11 +1,13 @@
 //  Imports
 //  ───────────────────────────────────
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 @import 'colors.less';
+@import 'helpers.less';
 @import 'sizes.less';
 
 
-//  Main Styles
+//  Base Styles
 //  ───────────────────────────────────
 
 :root {
@@ -14,6 +16,12 @@
 
 body, html {
   background-color: @oc-gray-0;
+  color: @oc-gray-9;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 div {
@@ -22,11 +30,14 @@ div {
   box-sizing: border-box;
 }
 
+
+//  Class & ID Styles
+//  ───────────────────────────────────
+
 .container {
   display: grid;
   grid-template-rows: @height-header auto @height-footer;
   grid-template-columns: auto @width-sidebar;
-  grid-gap: @spacing-gaps;
   margin: auto;
   min-height: 100vh;
   width: @width-container;
@@ -40,6 +51,28 @@ div {
     grid-row-start: 1;
     grid-row-end: 2;
     padding: @padding-wrapper;
+
+    .navigation {
+      display: grid;
+      justify-items: end;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+      .navigation-menu {
+        list-style-type: none;
+
+        li {
+          display: inline;
+          padding-left: @padding-wrapper;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
   }
 
   .main {
@@ -55,7 +88,7 @@ div {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    padding: @padding-wrapper;
+    padding: @padding-wrapper @padding-wrapper @padding-wrapper 0;
   }
 
   .footer {
@@ -75,7 +108,7 @@ div {
 
 @media screen and (max-width: 984px) {
 
-  body, html {
+  body {
     margin: 0 @padding-wrapper;
   }
 
@@ -90,8 +123,8 @@ div {
     grid-column-start: 1 !important;
     grid-column-end: 3 !important;
   }
-  
-  .sidebar {
+
+  .navigation-menu, .sidebar {
     display: none;
   }
 }
