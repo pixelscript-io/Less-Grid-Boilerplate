@@ -1,4 +1,4 @@
-# CSS Grid Boilerplate
+# Less Grid Boilerplate
 
 A lightweight 12-column CSS grid system built with CSS Grid and LESS.
 
