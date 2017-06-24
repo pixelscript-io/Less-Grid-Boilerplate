@@ -85,5 +85,4 @@ Use the `.middle` class to align the column to the middle of the layout.  This o
 
 ## Credits
 
-1. Grid system built by Joe Berthelot
-2. Colors used are from [Open Color by yeun](https://github.com/yeun/open-color)
+Grid system built by Joe Berthelot.
