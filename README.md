@@ -12,7 +12,7 @@ Simply just clone this repo to get started!
 
 The only requirements are that the columns are nested in a `.container` and a `.row`.  The markup is simple and straightforward:
 
-```
+```html
 <div class="container">
   <div class="row">
     <div class="full">This is a full-width column.</div>
@@ -22,7 +22,7 @@ The only requirements are that the columns are nested in a `.container` and a `.
 
 To create a two-column layout with a header and footer:
 
-```
+```html
 <div class="container">
   <div class="row">
     <div class="full">Header</div>
@@ -65,7 +65,7 @@ Aligning content is easy.  The following classes will align your content vertica
 
 Example markup:
 
-```
+```html
 <div class="container">
   <div class="row">
     <div class="full center-v center-h">This is a full-width column and this text is centered.</div>
