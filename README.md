@@ -86,7 +86,9 @@ Use the `.middle` class to align the column to the middle of the layout.  This o
 1. .top (Align a row to the top of the layout)
 2. .bottom (Align a row to the bottom of the layout)
 
-If you want to position an element to the top or bottom of your layout, add the `.grid` class to your `.container` and add either `.top` or `.bottom` to your `.row`.  Example markup:
+If you want to position an element to the top or bottom of your layout, add the `.grid` class to your `.container` and add either `.top` or `.bottom` to your `.row`.
+
+Example markup:
 
 ```html
 <div class="container grid">
@@ -99,6 +101,26 @@ If you want to position an element to the top or bottom of your layout, add the 
   </div>
   <div class="row bottom">
     <div class="full">Footer</div>
+  </div>
+</div>
+```
+
+#### Nested Grids
+
+Nesting grids is also extremely easy.  Just add the `.grid` class to your column and then add your inner-grid `<div>`'s inside!
+
+Example markup:
+
+```html
+<div class="container grid">
+  <div class="row">
+    <div class="one-half grid">
+      <div class="one-fourth">One Fourth</div>
+      <div class="one-fourth">One Fourth</div>
+      <div class="one-fourth">One Fourth</div>
+      <div class="one-fourth">One Fourth</div>
+    </div>
+    <div class="one-half grid">One Half</div>
   </div>
 </div>
 ```
