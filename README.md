@@ -73,6 +73,8 @@ Example markup:
 </div>
 ```
 
+Use the `.middle` class to align the column to the middle of the layout.  This only works on classes: `.one-half .two-thirds .one-third .one-sixth`.
+
 ## Contributing
 
 1. Fork it!
