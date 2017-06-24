@@ -1,28 +1,39 @@
 .container {
 
+  &.grid {
+    display: grid;
+  }
+
   .row {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
     grid-gap: @gap;
     padding-bottom: @gap;
+
+    &.bottom {
+      align-self: end;
+    }
+
+    &.top {
+      align-self: start;
+    }
 
     .grid {
       display: grid;
 
-      &.center-v {
+      &.content-center-v {
         align-items: center;
       }
 
-      &.center-h {
+      &.content-center-h {
         justify-content: center;
       }
 
-      &.end-v {
+      &.content-end-v {
         align-items: end;
       }
 
-      &.end-h {
+      &.content-end-h {
         justify-content: end;
       }
     }

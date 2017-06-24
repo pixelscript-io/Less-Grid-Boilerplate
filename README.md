@@ -54,12 +54,14 @@ Creating a `<div>` without one of the above classes will automatically span it 1
 
 ## Helper Classes
 
+#### Content Alignment
+
 Aligning content is easy.  The following classes will align your content vertically and horizontally, as you wish:
 
-1. .center-v (Vertically center)
-2. .center-h (Horizontally center)
-3. .end-v (Vertically align to bottom)
-4. .end-h (Horizontally align to right)
+1. .content-center-v (Vertically center content)
+2. .content-center-h (Horizontally center content)
+3. .content-end-v (Vertically align content to bottom)
+4. .content-end-h (Horizontally align content to right)
 
 Just make sure you also add the `.grid` class as well.
 
@@ -73,7 +75,33 @@ Example markup:
 </div>
 ```
 
+#### Column Alignment
+
+1. .middle (Align a column to the middle of the grid)
+
 Use the `.middle` class to align the column to the middle of the layout.  This only works on classes: `.one-half .two-thirds .one-third .one-sixth`.
+
+#### Fixed Header & Footer
+
+1. .top (Align a row to the top of the layout)
+2. .bottom (Align a row to the bottom of the layout)
+
+If you want to position an element to the top or bottom of your layout, add the `.grid` class to your `.container` and add either `.top` or `.bottom` to your `.row`.  Example markup:
+
+```html
+<div class="container grid">
+  <div class="row top">
+    <div class="full">Header</div>
+  </div>
+  <div class="row">
+    <div class="two-thirds">Content</div>
+    <div class="one-third">Sidebar</div>
+  </div>
+  <div class="row bottom">
+    <div class="full">Footer</div>
+  </div>
+</div>
+```
 
 ## Contributing
 
