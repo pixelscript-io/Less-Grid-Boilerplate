@@ -85,7 +85,3 @@ Example markup:
 
 1. Grid system built by Joe Berthelot
 2. Colors used are from [Open Color by yeun](https://github.com/yeun/open-color)
-
-## License
-
-TODO: Write license
