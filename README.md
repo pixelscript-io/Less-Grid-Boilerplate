@@ -28,7 +28,7 @@ To create a two-column layout with a header and footer:
     <div class="full">Header</div>
   </div>
   <div class="row">
-    <div class="one-half">Content</div>
+    <div class="two-thirds">Content</div>
     <div class="one-third">Sidebar</div>
   </div>
   <div class="row">
