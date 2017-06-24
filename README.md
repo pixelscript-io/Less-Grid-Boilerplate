@@ -70,7 +70,7 @@ Example markup:
 ```html
 <div class="container">
   <div class="row">
-    <div class="full grid center-v center-h">This is a full-width column and this text is centered.</div>
+    <div class="full grid content-center-v content-center-h">This is a full-width column and this text is centered.</div>
   </div>
 </div>
 ```
