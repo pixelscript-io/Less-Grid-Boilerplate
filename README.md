@@ -120,7 +120,7 @@ Example markup:
       <div class="one-fourth">One Fourth</div>
       <div class="one-fourth">One Fourth</div>
     </div>
-    <div class="one-half grid">One Half</div>
+    <div class="one-half">One Half</div>
   </div>
 </div>
 ```
