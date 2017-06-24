@@ -61,12 +61,14 @@ Aligning content is easy.  The following classes will align your content vertica
 3. .end-v (Vertically align to bottom)
 4. .end-h (Horizontally align to right)
 
+Just make sure you also add the `.grid` class as well.
+
 Example markup:
 
 ```html
 <div class="container">
   <div class="row">
-    <div class="full center-v center-h">This is a full-width column and this text is centered.</div>
+    <div class="full grid center-v center-h">This is a full-width column and this text is centered.</div>
   </div>
 </div>
 ```
