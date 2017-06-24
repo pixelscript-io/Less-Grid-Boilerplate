@@ -44,165 +44,133 @@
     }
 
     .one-half {
-      grid-column-start: 1;
-      grid-column-end: 7;
+      grid-column: 1 / span 6;
 
       &.middle {
-        grid-column-start: 4 !important;
-        grid-column-end: 10 !important;
+        grid-column: 4 / span 6 !important;
       }
 
       &:nth-child(2) {
-        grid-column-start: 4;
-        grid-column-end: 10;
+        grid-column: 4 / span 6;
       }
 
       &:last-child {
-        grid-column-start: 7;
-        grid-column-end: 13;
+        grid-column: 7 / span 6;
       }
 
       + .one-fourth {
-        grid-column-start: 7 !important;
-        grid-column-end: 10 !important;
+        grid-column: 7 / span 3 !important;
       }
 
       + .one-sixth {
-        grid-column-start: 7 !important;
-        grid-column-end: 9 !important;
+        grid-column: 7 / span 2 !important;
       }
 
       + .one-sixth + .one-sixth {
-        grid-column-start: 9 !important;
-        grid-column-end: 11 !important;
+        grid-column: 9 / span 2 !important;
       }
     }
 
     .one-third {
-      grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column: 1 / span 4;
 
       &.middle {
-        grid-column-start: 5 !important;
-        grid-column-end: 9 !important;
+        grid-column: 5 / span 4 !important;
       }
 
       &:nth-child(2) {
-        grid-column-start: 5;
-        grid-column-end: 9;
+        grid-column: 5 / span 4;
       }
 
       &:last-child {
-        grid-column-start: 9;
-        grid-column-end: 13;
+        grid-column: 9 / span 4;
       }
 
       + .one-sixth {
-        grid-column-start: 5 !important;
-        grid-column-end: 7 !important;
+        grid-column: 5 / span 2 !important;
       }
 
       + .one-sixth + .one-sixth {
-        grid-column-start: 7 !important;
-        grid-column-end: 9 !important;
+        grid-column: 7 / span 2 !important;
       }
 
       + .one-sixth + .one-sixth + .one-sixth {
-        grid-column-start: 9 !important;
-        grid-column-end: 11 !important;
+        grid-column: 9 / span 2 !important;
       }
     }
 
     .two-thirds {
-      grid-column-start: 1;
-      grid-column-end: 9;
+      grid-column: 1 / span 8;
 
       &.middle {
-        grid-column-start: 3 !important;
-        grid-column-end: 11 !important;
+        grid-column: 3 / span 8 !important;
       }
 
       &:nth-child(2) {
-        grid-column-start: 2;
-        grid-column-end: 10;
+        grid-column: 2 / span 8;
       }
 
       &:last-child {
-        grid-column-start: 5 !important;
-        grid-column-end: 13 !important;
+        grid-column: 5 / span 8 !important;
       }
 
       + .one-sixth {
-        grid-column-start: 9 !important;
-        grid-column-end: 11 !important;
+        grid-column: 9 / span 2 !important;
       }
     }
 
     .one-fourth {
-      grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column: 1 / span 3;
 
       &:nth-child(2) {
-        grid-column-start: 4;
-        grid-column-end: 7;
+        grid-column: 4 / span 3;
       }
 
       &:nth-child(3) {
-        grid-column-start: 7;
-        grid-column-end: 10;
+        grid-column: 7 / span 3;
       }
 
       &:last-child {
-        grid-column-start: 10 !important;
-        grid-column-end: 13 !important;
+        grid-column: 10 / span 3 !important;
       }
     }
 
     .one-sixth {
-      grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column: 1 / span 2;
 
       &:nth-child(2) {
-        grid-column-start: 3;
-        grid-column-end: 5;
+        grid-column: 3 / span 2;
       }
 
       &:nth-child(3) {
-        grid-column-start: 5;
-        grid-column-end: 7;
+        grid-column: 5 / span 2;
       }
 
       &:nth-child(4) {
-        grid-column-start: 7;
-        grid-column-end: 9;
+        grid-column: 7 / span 2;
       }
 
       &:nth-child(5) {
-        grid-column-start: 9;
-        grid-column-end: 11;
+        grid-column: 9 / span 2;
       }
 
       &:last-child {
-        grid-column-start: 11 !important;
-        grid-column-end: 13 !important;
+        grid-column: 11 / span 2 !important;
       }
 
       &.middle:only-child {
-        grid-column-start: 6 !important;
-        grid-column-end: 8 !important;
+        grid-column: 6 / span 2 !important;
       }
 
       + .two-thirds {
-        grid-column-start: 3;
-        grid-column-end: 11;
+        grid-column: 3 / span 8;
       }
     }
 
     div {
 
       &:last-child {
-        grid-column-start: 12;
-        grid-column-end: 13;
+        grid-column: 12 / span 1;
       }
     }
   }
