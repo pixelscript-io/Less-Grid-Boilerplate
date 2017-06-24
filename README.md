@@ -12,15 +12,18 @@ Simply just clone this repo to get started!
 
 The only requirements are that the columns are nested in a `.container` and a `.row`.  The markup is simple and straightforward:
 
-`<div class="container">
+```
+<div class="container">
   <div class="row">
     <div class="full">This is a full-width column.</div>
   </div>
-</div>`
+</div>
+```
 
 To create a two-column layout with a header and footer:
 
-`<div class="container">
+```
+<div class="container">
   <div class="row">
     <div class="full">Header</div>
   </div>
@@ -33,7 +36,8 @@ To create a two-column layout with a header and footer:
   <div class="row">
     <div class="full">Footer</div>
   </div>
-</div>`
+</div>
+```
 
 The layout comes with a max-width of 960px, column and row-gap of 20px out of the box.  To change or remove these variables, just modify them in `css/sizes.less`.
 
@@ -61,11 +65,13 @@ Aligning content is easy.  The following classes will align your content vertica
 
 Example markup:
 
-`<div class="container">
+```
+<div class="container">
   <div class="row">
     <div class="full center-v center-h">This is a full-width column and this text is centered.</div>
   </div>
-</div>`
+</div>
+```
 
 ## Contributing
 
