@@ -2,7 +2,7 @@
 
 A lightweight 12-column CSS grid system built with CSS Grid and LESS.
 
-(http://i.imgur.com/KexAaDg.png "Grid System")
+![Grid System](http://i.imgur.com/KexAaDg.png)
 
 ## Installation
 
