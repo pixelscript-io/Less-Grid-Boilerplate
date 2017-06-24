@@ -2,12 +2,13 @@
 //  ───────────────────────────────────
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-@import 'colors.less';
-@import 'helpers.less';
+@import 'vendor/colors.less';
+@import 'vendor/normalize.min.css';
+@import 'grid.less';
 @import 'sizes.less';
 
 
-//  Base Styles
+//  Overwrites
 //  ───────────────────────────────────
 
 :root {
@@ -15,8 +16,8 @@
 }
 
 body, html {
-  background-color: @oc-gray-0;
-  color: @oc-gray-9;
+  background-color: @oc-gray-1;
+  color: @oc-gray-8;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -31,100 +32,13 @@ div {
 }
 
 
-//  Class & ID Styles
+//  Classes and ID's
 //  ───────────────────────────────────
 
 .container {
-  display: grid;
-  grid-template-rows: @height-header auto @height-footer;
-  grid-template-columns: auto @width-sidebar;
+  background-color: @oc-white;
   margin: auto;
   min-height: 100vh;
-  width: @width-container;
-  background-color: @oc-white;
-
-  .header {
-    display: grid;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding: @padding-wrapper;
-
-    .navigation {
-      display: grid;
-      justify-items: end;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-
-      .navigation-menu {
-        list-style-type: none;
-
-        li {
-          display: inline;
-          padding-left: @padding-wrapper;
-
-          &:first-child {
-            padding-left: 0;
-          }
-        }
-      }
-    }
-  }
-
-  .main {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding: @padding-wrapper;
-  }
-
-  .sidebar {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding: @padding-wrapper @padding-wrapper @padding-wrapper 0;
-  }
-
-  .footer {
-    display: grid;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    padding: @padding-wrapper;
-  }
-}
-
-
-//  Media Queries
-//  ───────────────────────────────────
-
-@media screen and (max-width: 984px) {
-
-  body {
-    margin: 0 @padding-wrapper;
-  }
-
-  .container {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 720px) {
-
-  .main {
-    grid-column-start: 1 !important;
-    grid-column-end: 3 !important;
-  }
-
-  .navigation-menu, .sidebar {
-    display: none;
-  }
+  padding: @padding-container;
+  max-width: @width-container;
 }
