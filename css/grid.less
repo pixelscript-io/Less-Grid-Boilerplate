@@ -102,8 +102,8 @@
       }
 
       &:last-child {
-        grid-column-start: 5;
-        grid-column-end: 13;
+        grid-column-start: 5 !important;
+        grid-column-end: 13 !important;
       }
 
       + .one-sixth {
@@ -159,6 +159,11 @@
       &:last-child {
         grid-column-start: 11 !important;
         grid-column-end: 13 !important;
+      }
+
+      + .two-thirds {
+        grid-column-start: 3;
+        grid-column-end: 11;
       }
     }
   }

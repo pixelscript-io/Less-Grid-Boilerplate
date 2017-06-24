@@ -6,7 +6,7 @@ A lightweight 12-column CSS grid system built with CSS Grid and LESS.
 
 ## Installation
 
-Simply just clone this repo to get started!
+Simply just clone this repo to get started! View `example.html` for a variety of different possibilities.
 
 ## Usage
 
