@@ -6,7 +6,7 @@ A lightweight 12-column CSS grid system built with CSS Grid and LESS.
 
 ## Installation
 
-Simply just clone this repo to get started! View ![docs/index.html](https://joeberthelot88.github.io/Less-Grid-Boilerplate/) for a variety of different possibilities.
+Simply just clone this repo to get started! View [docs/index.html](https://joeberthelot88.github.io/Less-Grid-Boilerplate/) for a variety of different possibilities.
 
 ## Usage
 
