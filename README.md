@@ -6,7 +6,7 @@ A lightweight 12-column CSS grid system built with CSS Grid and LESS.
 
 ## Installation
 
-Simply just clone this repo to get started! View `example.html` for a variety of different possibilities.
+Simply just clone this repo to get started! View `docs/examples.html` for a variety of different possibilities.
 
 ## Usage
 
@@ -37,7 +37,7 @@ To create a two-column layout with a header and footer:
 </div>
 ```
 
-The layout comes with a max-width of 960px, column and row-gap of 20px out of the box.  To change or remove these variables, just modify them in `css/sizes.less`.
+The layout comes with a max-width of 960px, column and row-gap of 20px out of the box.  To change or remove these variables, just modify them in `css/sizes.less`.  For a full-width fluid layout, add the class `.fluid` to your `.container`.
 
 ## The Classes
 
@@ -121,6 +121,32 @@ Example markup:
       <div class="one-fourth">One Fourth</div>
     </div>
     <div class="one-half">One Half</div>
+  </div>
+</div>
+```
+
+#### Responsive Grids
+
+Two breakpoints are provided: 768px for tablets and 576px for mobile.  Apply one of the following helper classes to your `.container` to enable column stacking:
+
+1. .tablet-stack (Stack columns at <= 768px)
+2. .mobile-stack (Stack columns at <= 576px)
+
+To set a specific row or column to be hidden when a breakpoint is hit, just add the `.sm-hide` class.
+
+Example markup:
+
+```html
+<div class="container mobile-stack grid">
+  <div class="row">
+    <div class="one-half">One Half</div>
+    <div class="one-half">One Half</div>
+  </div>
+  <div class="row sm-hide">
+    <div class="one-fourth">One Fourth</div>
+    <div class="one-fourth">One Fourth</div>
+    <div class="one-fourth">One Fourth</div>
+    <div class="one-fourth">One Fourth</div>
   </div>
 </div>
 ```

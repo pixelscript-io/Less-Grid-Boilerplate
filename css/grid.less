@@ -174,3 +174,71 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container.tablet-stack {
+
+    .row {
+
+      .sm-hide {
+        display: none;
+      }
+
+      &.sm-hide {
+        display: none;
+      }
+
+      div,
+      .one-fourth:last-child,
+      .one-sixth:last-child,
+      .one-half + .one-fourth,
+      .one-half + .one-sixth,
+      .one-half + .one-sixth + .one-sixth,
+      .two-thirds:last-child,
+      .two-thirds + .one-sixth,
+      .one-third + .one-sixth,
+      .one-third + .one-sixth + .one-sixth,
+      .one-third + .one-sixth + .one-sixth + .one-sixth,
+      .two-thirds.middle,
+      .one-half.middle,
+      .one-third.middle,
+      .one-sixth.middle:only-child {
+        grid-column: 1 / span 12 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container.mobile-stack {
+
+    .row {
+
+      .sm-hide {
+        display: none;
+      }
+
+      &.sm-hide {
+        display: none;
+      }
+
+      div,
+      .one-fourth:last-child,
+      .one-sixth:last-child,
+      .one-half + .one-fourth,
+      .one-half + .one-sixth,
+      .one-half + .one-sixth + .one-sixth,
+      .two-thirds:last-child,
+      .two-thirds + .one-sixth,
+      .one-third + .one-sixth,
+      .one-third + .one-sixth + .one-sixth,
+      .one-third + .one-sixth + .one-sixth + .one-sixth,
+      .two-thirds.middle,
+      .one-half.middle,
+      .one-third.middle,
+      .one-sixth.middle:only-child {
+        grid-column: 1 / span 12 !important;
+      }
+    }
+  }
+}

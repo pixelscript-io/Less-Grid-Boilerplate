@@ -1,31 +1,16 @@
 //  Imports
 //  ───────────────────────────────────
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 @import 'vendor/normalize.min.css';
 @import 'grid.less';
-@import 'sizes.less';
+@import 'variables.less';
 
 
 //  Overwrites
 //  ───────────────────────────────────
 
 :root {
-  font-size: 14px;
-}
-
-body, html {
-  font-family: 'Roboto', sans-serif;
-}
-
-p {
-  line-height: 1.5rem;
-}
-
-div {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  font-size: @root-font-size;
 }
 
 
@@ -37,4 +22,8 @@ div {
   min-height: 100vh;
   padding: @padding-container;
   max-width: @width-container;
+
+  &.fluid {
+    max-width: 100%;
+  }
 }
