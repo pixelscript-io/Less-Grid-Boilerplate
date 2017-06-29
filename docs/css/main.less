@@ -1,0 +1,29 @@
+//  Imports
+//  ───────────────────────────────────
+
+@import 'vendor/normalize.min.css';
+@import 'grid.less';
+@import 'variables.less';
+
+
+//  Overwrites
+//  ───────────────────────────────────
+
+:root {
+  font-size: @root-font-size;
+}
+
+
+//  Classes and ID's
+//  ───────────────────────────────────
+
+.container {
+  margin: auto;
+  min-height: 100vh;
+  padding: @padding-container;
+  max-width: @width-container;
+
+  &.fluid {
+    max-width: 100%;
+  }
+}

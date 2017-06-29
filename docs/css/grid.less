@@ -1,0 +1,244 @@
+.container {
+
+  &.grid {
+    display: grid;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: @gap;
+    padding-bottom: @gap;
+
+    &.bottom {
+      align-self: end;
+    }
+
+    &.top {
+      align-self: start;
+    }
+
+    .grid {
+      display: grid;
+
+      &.content-center-v {
+        align-items: center;
+      }
+
+      &.content-center-h {
+        justify-content: center;
+      }
+
+      &.content-end-v {
+        align-items: end;
+      }
+
+      &.content-end-h {
+        justify-content: end;
+      }
+    }
+
+    .full {
+      grid-column: 1 / span 12 !important;
+    }
+
+    .one-half {
+      grid-column: 1 / span 6;
+
+      &.middle {
+        grid-column: 4 / span 6 !important;
+      }
+
+      &:nth-child(2) {
+        grid-column: 4 / span 6;
+      }
+
+      &:last-child {
+        grid-column: 7 / span 6;
+      }
+
+      + .one-fourth {
+        grid-column: 7 / span 3 !important;
+      }
+
+      + .one-sixth {
+        grid-column: 7 / span 2 !important;
+      }
+
+      + .one-sixth + .one-sixth {
+        grid-column: 9 / span 2 !important;
+      }
+    }
+
+    .one-third {
+      grid-column: 1 / span 4;
+
+      &.middle {
+        grid-column: 5 / span 4 !important;
+      }
+
+      &:nth-child(2) {
+        grid-column: 5 / span 4;
+      }
+
+      &:last-child {
+        grid-column: 9 / span 4;
+      }
+
+      + .one-sixth {
+        grid-column: 5 / span 2 !important;
+      }
+
+      + .one-sixth + .one-sixth {
+        grid-column: 7 / span 2 !important;
+      }
+
+      + .one-sixth + .one-sixth + .one-sixth {
+        grid-column: 9 / span 2 !important;
+      }
+    }
+
+    .two-thirds {
+      grid-column: 1 / span 8;
+
+      &.middle {
+        grid-column: 3 / span 8 !important;
+      }
+
+      &:nth-child(2) {
+        grid-column: 2 / span 8;
+      }
+
+      &:last-child {
+        grid-column: 5 / span 8 !important;
+      }
+
+      + .one-sixth {
+        grid-column: 9 / span 2 !important;
+      }
+    }
+
+    .one-fourth {
+      grid-column: 1 / span 3;
+
+      &:nth-child(2) {
+        grid-column: 4 / span 3;
+      }
+
+      &:nth-child(3) {
+        grid-column: 7 / span 3;
+      }
+
+      &:last-child {
+        grid-column: 10 / span 3 !important;
+      }
+    }
+
+    .one-sixth {
+      grid-column: 1 / span 2;
+
+      &:nth-child(2) {
+        grid-column: 3 / span 2;
+      }
+
+      &:nth-child(3) {
+        grid-column: 5 / span 2;
+      }
+
+      &:nth-child(4) {
+        grid-column: 7 / span 2;
+      }
+
+      &:nth-child(5) {
+        grid-column: 9 / span 2;
+      }
+
+      &:last-child {
+        grid-column: 11 / span 2 !important;
+      }
+
+      &.middle:only-child {
+        grid-column: 6 / span 2 !important;
+      }
+
+      + .two-thirds {
+        grid-column: 3 / span 8;
+      }
+    }
+
+    div {
+
+      &:last-child {
+        grid-column: 12 / span 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container.tablet-stack {
+
+    .row {
+
+      .sm-hide {
+        display: none;
+      }
+
+      &.sm-hide {
+        display: none;
+      }
+
+      div,
+      .one-fourth:last-child,
+      .one-sixth:last-child,
+      .one-half + .one-fourth,
+      .one-half + .one-sixth,
+      .one-half + .one-sixth + .one-sixth,
+      .two-thirds:last-child,
+      .two-thirds + .one-sixth,
+      .one-third + .one-sixth,
+      .one-third + .one-sixth + .one-sixth,
+      .one-third + .one-sixth + .one-sixth + .one-sixth,
+      .two-thirds.middle,
+      .one-half.middle,
+      .one-third.middle,
+      .one-sixth.middle:only-child {
+        grid-column: 1 / span 12 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container.mobile-stack {
+
+    .row {
+
+      .sm-hide {
+        display: none;
+      }
+
+      &.sm-hide {
+        display: none;
+      }
+
+      div,
+      .one-fourth:last-child,
+      .one-sixth:last-child,
+      .one-half + .one-fourth,
+      .one-half + .one-sixth,
+      .one-half + .one-sixth + .one-sixth,
+      .two-thirds:last-child,
+      .two-thirds + .one-sixth,
+      .one-third + .one-sixth,
+      .one-third + .one-sixth + .one-sixth,
+      .one-third + .one-sixth + .one-sixth + .one-sixth,
+      .two-thirds.middle,
+      .one-half.middle,
+      .one-third.middle,
+      .one-sixth.middle:only-child {
+        grid-column: 1 / span 12 !important;
+      }
+    }
+  }
+}
